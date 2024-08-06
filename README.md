@@ -1,4 +1,4 @@
-# Dart Package Template
+# DF Scalable
 
 Dart & Flutter Packages by DevCetra.com & contributors.
 
