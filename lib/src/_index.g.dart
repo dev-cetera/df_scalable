@@ -8,11 +8,12 @@
 //.title~
 
 // --- PUBLIC FILES ---
+export 'scalable_app.dart';
 export 'sc.dart';
 export 'sc_on_num_extension.dart';
 
 // --- PRIVATE FILES (EXCLUDED) ---
-// None found.
+// export '_index.g.dart';
 
 // --- GENERATED FILES (EXCLUDED) ---
 // None found.
