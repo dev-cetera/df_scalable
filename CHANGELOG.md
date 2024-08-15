@@ -4,6 +4,7 @@
 
 - Released @ 8/2024 (UTC)
 - chore: Update dependencies
+- docs: Update readme and details in pubspec.yaml
 
 ## [0.2.0]
 
