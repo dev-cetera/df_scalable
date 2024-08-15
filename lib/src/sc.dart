@@ -35,5 +35,5 @@ class Sc {
   //
   //
 
-  double get sc => this._value.sc;
+  double get sc => _value.sc;
 }

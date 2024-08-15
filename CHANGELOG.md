@@ -1,5 +1,10 @@
 # Changelog
 
+## [0.2.0]
+
+- Released @ 8/2024 (UTC)
+- chore: Update .gitignore
+
 ## [0.1.2]
 
 - Released @ 8/2024 (UTC)
