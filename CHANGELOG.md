@@ -1,15 +1,10 @@
 # Changelog
 
-## [0.2.1]
-
-- Released @ 8/2024 (UTC)
-- chore: Update dependencies
-- docs: Update readme and details in pubspec.yaml
-
 ## [0.2.0]
 
 - Released @ 8/2024 (UTC)
 - chore: Update .gitignore
+- chore: Update dependencies and readme
 
 ## [0.1.2]
 

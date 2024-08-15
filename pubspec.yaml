@@ -9,7 +9,7 @@
 
 name: df_scalable
 description: A package that provides a convenient method to scale your app UI and or down.
-version: 0.2.1
+version: 0.2.0
 repository: https://github.com/robmllze/df_scalable
 # homepage: TODO
 # documentation: TODO
