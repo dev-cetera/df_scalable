@@ -1,16 +1,17 @@
 # DF Scalable
 
+<a href="https://www.buymeacoffee.com/robmllze" target="_blank"><img align="right" src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
+
 Dart & Flutter Packages by DevCetra.com & contributors.
 
 [![Pub Package](https://img.shields.io/pub/v/df_scalable.svg)](https://pub.dev/packages/df_scalable)
 [![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](https://raw.githubusercontent.com/robmllze/df_scalable/main/LICENSE)
-[![Buy Me a Coffee](https://img.shields.io/badge/-buy_me_a%C2%A0coffee-gray?logo=buy-me-a-coffee)](https://www.buymeacoffee.com/robmllze)
 
 ---
 
 ## Summary
 
-A package that provides a convenient structure for scaling your app. For a full feature set, please refer to the [API reference](https://pub.dev/documentation/df_scalable/).
+A package that provides a convenient method to scale your app UI and or down. For a full feature set, please refer to the [API reference](https://pub.dev/documentation/df_scalable/).
 
 ## Usage Example
 
