@@ -5,6 +5,7 @@
 - Released @ 8/2024 (UTC)
 - chore: Update .gitignore
 - chore: Update dependencies and readme
+- docs: Update header comments
 
 ## [0.1.2]
 
