@@ -9,14 +9,14 @@
 
 name: df_scalable
 description: A package that provides a convenient structure for scaling your app.
-version: 0.2.0
+version: 0.2.1
 repository: https://github.com/robmllze/df_scalable
 
 ## -----------------------------------------------------------------------------
 
 environment:
-  sdk: ">=3.0.0 < 4.0.0"
-  flutter: ">=3.0.0 <4.0.0"
+  sdk: ">=3.5.0 <4.0.0"
+  flutter: ">=3.24.0 <4.0.0"
 
 ## -----------------------------------------------------------------------------
 
