@@ -64,7 +64,8 @@ class ScalableApp extends StatelessWidget {
   //
   //
 
-  static final Future<TSharedGlobalDoublePod> _pAppScale = SharedDoublePodCreator.global(_KEY).then(
+  static final Future<TSharedGlobalDoublePod> _pAppScale =
+      SharedDoublePodCreator.global(_KEY).then(
     (e) => e
       ..addListener(
         () {
