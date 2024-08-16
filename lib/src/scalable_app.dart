@@ -37,7 +37,7 @@ class ScalableApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return PodBuilder(
       pod: ScalableApp.pod,
-      builder: (_) {
+      builder: (context, snapshot) {
         return SizedBox(
           key: UniqueKey(),
           child: child,
