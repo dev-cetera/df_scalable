@@ -37,7 +37,7 @@ class ScalableApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return PodBuilder(
       pod: ScalableApp.pod,
-      builder: (context, scale, child) {
+      builder: (_) {
         return SizedBox(
           key: UniqueKey(),
           child: child,
@@ -64,8 +64,7 @@ class ScalableApp extends StatelessWidget {
   //
   //
 
-  static final Future<TSharedGlobalDoublePod> _pAppScale =
-      SharedDoublePodCreator.global(_KEY).then(
+  static final Future<TSharedGlobalDoublePod> _pAppScale = SharedDoublePodCreator.global(_KEY).then(
     (e) => e
       ..addListener(
         () {
