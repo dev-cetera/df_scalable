@@ -1,5 +1,10 @@
 # Changelog
 
+## [0.2.5]
+
+- Released @ 8/2024 (UTC)
+- chore: Update df_pod dependency to version 0.9.1
+
 ## [0.2.4]
 
 - Released @ 8/2024 (UTC)
