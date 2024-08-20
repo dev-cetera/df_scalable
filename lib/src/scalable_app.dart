@@ -2,8 +2,8 @@
 // ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
 //
 // Dart/Flutter (DF) Packages by DevCetra.com & contributors. Use of this
-// source code is governed by an MIT-style license that can be found in the
-// LICENSE file.
+// source code is governed by an an MIT-style license that can be found in the
+// LICENSE file located in this project's root directory.
 //
 // ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
 //.title~
@@ -51,8 +51,8 @@ class ScalableApp extends StatelessWidget {
   //
   //
 
-  static double? _snapshot;
-  static double? get snapshot => _snapshot;
+  static TSharedGlobalDoublePod? _pAppScale;
+  static double? get snapshot => _pAppScale?.value;
 
   //
   //
@@ -64,22 +64,15 @@ class ScalableApp extends StatelessWidget {
   //
   //
 
-  static final Future<TSharedGlobalDoublePod> _pAppScale =
-      SharedDoublePodCreator.global(_KEY).then(
-    (e) => e
-      ..addListener(
-        () {
-          _snapshot = e.value;
-        },
-      ),
-  );
+  static final Future<TSharedGlobalDoublePod> _pFutureAppScale =
+      SharedDoublePodCreator.global(_KEY).then((e) => _pAppScale = e);
 
   //
   //
   //
 
   static Future<void> set(double value) async {
-    final e = await _pAppScale;
+    final e = await _pFutureAppScale;
     await e.set(value);
   }
 
@@ -88,7 +81,7 @@ class ScalableApp extends StatelessWidget {
   //
 
   static Future<double?> get() async {
-    final e = await _pAppScale;
+    final e = await _pFutureAppScale;
     return e.value;
   }
 
@@ -97,6 +90,6 @@ class ScalableApp extends StatelessWidget {
   //
 
   static Future<PodListenable<double?>> get pod async {
-    return _pAppScale;
+    return _pFutureAppScale;
   }
 }
