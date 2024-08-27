@@ -1,16 +1,18 @@
 ##.title
 ## ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
 ##
-## Dart/Flutter (DF) Packages by DevCetra.com & contributors. Use of this
-## source code is governed by an an MIT-style license that can be found in the
-## LICENSE file located in this project's root directory.
+## Dart/Flutter (DF) Packages by DevCetra.com & contributors. The use of this
+## source code is governed by an MIT-style license described in the LICENSE
+## file located in this project's root directory.
+##
+## See: https://opensource.org/license/mit
 ##
 ## ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
 ##.title~
 
 name: df_scalable
 description: A package that provides a convenient method to scale your app UI up or down.
-version: 0.2.5
+version: 0.2.6
 repository: https://github.com/robmllze/df_scalable
 # homepage: TODO
 # documentation: TODO
@@ -33,7 +35,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  df_pod: ^0.9.1
+  df_pod: ^0.10.0
 
 ## -----------------------------------------------------------------------------
 
