@@ -60,7 +60,7 @@ class ScalableApp extends StatelessWidget {
   //
   //
 
-  static const _KEY = '<df_app_scale>';
+  static const _KEY = '<SCALE>';
 
   //
   //
