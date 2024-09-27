@@ -1,5 +1,10 @@
 # Changelog
 
+## [0.5.0]
+
+- Released @ 9/2024 (UTC)
+- chore: Rename pScalable to pScale for clarity
+
 ## [0.4.0]
 
 - Released @ 9/2024 (UTC)
