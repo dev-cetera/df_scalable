@@ -10,12 +10,12 @@
 // ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
 //.title~
 
-import 'scalable_app.dart';
+import 'scalable.dart';
 
 // ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 
 extension ScOnNumExtension on num {
   /// Multiples the num with the current app scale.
   // ignore: invalid_use_of_protected_member
-  double get sc => this * (AppScale.di.getSyncOrNull() ?? 1.0);
+  double get sc => this * (Scalable.di.getSyncOrNull() ?? 1.0);
 }

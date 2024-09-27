@@ -8,7 +8,7 @@
 //.title~
 
 // --- PUBLIC FILES ---
-export 'scalable_app.dart';
+export 'scalable.dart';
 export 'sc.dart';
 export 'sc_on_num_extension.dart';
 

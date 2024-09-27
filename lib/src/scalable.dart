@@ -10,21 +10,19 @@
 // ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
 //.title~
 
-import 'dart:async';
-
-import 'package:df_di/df_di.dart';
-import 'package:df_pod/df_pod.dart';
-import 'package:flutter/widgets.dart';
+import 'dart:async' show FutureOr;
+import 'package:df_di/df_di.dart' show DI;
+import 'package:df_pod/df_pod.dart' show SharedDoublePodCreator, TSharedGlobalDoublePod;
+import 'package:flutter/foundation.dart' show protected;
 
 // ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 
-final class AppScale {
-  AppScale._();
+final class Scalable {
+  Scalable._();
   @protected
   static final di = DI();
   static final Future<TSharedGlobalDoublePod> _pValue =
       SharedDoublePodCreator.global('<AppScale.pValue>')
           .then((e) => di.register<TSharedGlobalDoublePod>(_pValue));
-  static FutureOr<TSharedGlobalDoublePod> get pAppScale =>
-      di.until<TSharedGlobalDoublePod>();
+  static FutureOr<TSharedGlobalDoublePod> get pScalable => di.until<TSharedGlobalDoublePod>();
 }
