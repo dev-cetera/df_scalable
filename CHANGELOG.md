@@ -1,5 +1,10 @@
 # Changelog
 
+## [0.6.0]
+
+- Released @ 9/2024 (UTC)
+- chore: Simplified Scalable class
+
 ## [0.5.0]
 
 - Released @ 9/2024 (UTC)
