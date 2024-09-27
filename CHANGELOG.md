@@ -1,5 +1,10 @@
 # Changelog
 
+## [0.4.0]
+
+- Released @ 9/2024 (UTC)
+- refactor: Rename AppScale to Scalable
+
 ## [0.3.0]
 
 - Released @ 9/2024 (UTC)
