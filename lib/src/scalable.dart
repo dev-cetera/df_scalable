@@ -11,13 +11,11 @@
 //.title~
 
 import 'package:df_pod/df_pod.dart' show SharedPod;
-import 'package:flutter/foundation.dart' show protected;
 
 // ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 
 final class Scalable {
   Scalable._();
-  @protected
   static final pScale = SharedPod<double, double>(
     '<Scalable.pScale>',
     fromValue: (e) => e,
