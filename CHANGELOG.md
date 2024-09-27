@@ -1,5 +1,10 @@
 # Changelog
 
+## [0.3.0]
+
+- Released @ 9/2024 (UTC)
+- breaking: Simplify
+
 ## [0.2.9]
 
 - Released @ 9/2024 (UTC)

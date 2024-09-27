@@ -25,5 +25,6 @@ final class AppScale {
   static final Future<TSharedGlobalDoublePod> _pValue =
       SharedDoublePodCreator.global('<AppScale.pValue>')
           .then((e) => di.register<TSharedGlobalDoublePod>(_pValue));
-  static FutureOr<TSharedGlobalDoublePod> get pAppScale => di.until<TSharedGlobalDoublePod>();
+  static FutureOr<TSharedGlobalDoublePod> get pAppScale =>
+      di.until<TSharedGlobalDoublePod>();
 }
