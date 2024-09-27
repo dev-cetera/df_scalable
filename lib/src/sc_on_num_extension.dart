@@ -16,5 +16,6 @@ import 'scalable_app.dart';
 
 extension ScOnNumExtension on num {
   /// Multiples the num with the current app scale.
-  double get sc => this * (ScalableApp.snapshot ?? 1.0);
+  // ignore: invalid_use_of_protected_member
+  double get sc => this * (AppScale.di.getSyncOrNull() ?? 1.0);
 }

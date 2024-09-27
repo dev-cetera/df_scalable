@@ -10,88 +10,20 @@
 // ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
 //.title~
 
+import 'dart:async';
+
+import 'package:df_di/df_di.dart';
 import 'package:df_pod/df_pod.dart';
 import 'package:flutter/widgets.dart';
 
 // ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 
-class ScalableApp extends StatelessWidget {
-  //
-  //
-  //
-
-  final Widget child;
-
-  //
-  //
-  //
-
-  const ScalableApp({
-    super.key,
-    required this.child,
-  });
-
-  //
-  //
-  //
-
-  @override
-  Widget build(BuildContext context) {
-    return PodBuilder(
-      pod: ScalableApp.pod,
-      builder: (context, snapshot) {
-        return SizedBox(
-          key: UniqueKey(),
-          child: child,
-        );
-      },
-      child: child,
-    );
-  }
-
-  //
-  //
-  //
-
-  static TSharedGlobalDoublePod? _pAppScale;
-  static double? get snapshot => _pAppScale?.value;
-
-  //
-  //
-  //
-
-  static const _KEY = '<SCALE>';
-
-  //
-  //
-  //
-
-  static final Future<TSharedGlobalDoublePod> _pFutureAppScale =
-      SharedDoublePodCreator.global(_KEY).then((e) => _pAppScale = e);
-
-  //
-  //
-  //
-
-  static Future<void> set(double value) async {
-    final e = await _pFutureAppScale;
-    await e.set(value);
-  }
-
-  //
-  //
-  //
-
-  static Future<double?> get() async {
-    final e = await _pFutureAppScale;
-    return e.value;
-  }
-
-  //
-  //
-  //
-
-  static Future<PodListenable<double?>> get pod async {
-    return _pFutureAppScale;
-  }
+final class AppScale {
+  AppScale._();
+  @protected
+  static final di = DI();
+  static final Future<TSharedGlobalDoublePod> _pValue =
+      SharedDoublePodCreator.global('<AppScale.pValue>')
+          .then((e) => di.register<TSharedGlobalDoublePod>(_pValue));
+  static FutureOr<TSharedGlobalDoublePod> get pAppScale => di.until<TSharedGlobalDoublePod>();
 }
