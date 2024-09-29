@@ -20,5 +20,6 @@ final class Scalable {
     '<Scalable.pScale>',
     fromValue: (e) => e,
     toValue: (e) => e,
+    initialValue: 1.0,
   )..refresh();
 }
