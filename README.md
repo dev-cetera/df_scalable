@@ -15,7 +15,7 @@ A package that provides a convenient method to scale your app UI and or down. Fo
 
 ## Usage Example
 
-Coming soon.
+Unavailable. Please check in later.
 
 ## Installation
 
