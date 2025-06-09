@@ -18,7 +18,7 @@ final class Scalable {
   Scalable._();
   static final pScale = SharedPod<double, double>(
     '<Scalable.pScale>',
-    fromValue: (e) => e,
+    fromValue: (e) => e ?? 1.0,
     toValue: (e) => e,
     initialValue: 1.0,
   )..refresh();
