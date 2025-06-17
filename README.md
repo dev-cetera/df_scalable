@@ -4,7 +4,7 @@
 Dart & Flutter Packages by dev-cetera.com & contributors.
 
 [![pub](https://img.shields.io/pub/v/df_scalable.svg)](https://pub.dev/packages/df_scalable)
-[![tag](https://img.shields.io/badge/tag-v0.9.2-purple)](https://github.com/dev-cetera/df_scalable/tree/v0.9.2)
+[![tag](https://img.shields.io/badge/tag-v0.9.3-purple)](https://github.com/dev-cetera/df_scalable/tree/v0.9.3)
 [![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/dev-cetera/df_scalable/main/LICENSE)
 
 ---
@@ -49,4 +49,3 @@ If you're enjoying this package and find it valuable, consider showing your appr
 ## License
 
 This project is released under the [MIT License](https://raw.githubusercontent.com/dev-cetera/df_scalable/main/LICENSE). See [LICENSE](https://raw.githubusercontent.com/dev-cetera/df_scalable/main/LICENSE) for more information.
-
