@@ -15,11 +15,11 @@ name: df_scalable
 homepage: https://dev-cetera.com/
 repository: https://github.com/robmllze/df_scalable
 funding:
-- https://www.buymeacoffee.com/dev_cetera
-- https://www.patreon.com/c/RobertMollentze
-- https://github.com/sponsors/robmllze
+  - https://www.buymeacoffee.com/dev_cetera
+  - https://www.patreon.com/c/robelator
+  - https://github.com/sponsors/robelator
 description: A package that provides a convenient method to scale your app UI up or down.
-version: 0.9.6
+version: 0.10.0
 topics:
   - accessibility
   - app-scale
@@ -37,7 +37,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  df_pod: ^0.18.10
+  df_pod: ^0.19.1
 
 ## -----------------------------------------------------------------------------
 
