@@ -1,5 +1,10 @@
 # Changelog
 
+## [0.10.2]
+
+- Released @ 7/2026 (UTC)
+- Update: bumps `df_pod` to `^0.20.0` to align with the rest of the ecosystem (df_router, df_screen)
+
 ## [0.10.1]
 
 - fix: tolerate no-test packages in publish.yml test gate
