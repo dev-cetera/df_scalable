@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.10.0]
+
+- Released @ 7/2026 (UTC)
+- Update: bumps `df_pod` to `^0.19.1`
+- Chore: migrate CI to the `prod.yml`/`publish.yml` release workflow and standardize tooling
+
 ## [0.9.6]
 
 - Released @ 6/2025 (UTC)
