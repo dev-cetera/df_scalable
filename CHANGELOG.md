@@ -1,5 +1,10 @@
 # Changelog
 
+## [0.10.1]
+
+- fix: tolerate no-test packages in publish.yml test gate
+
+
 ## [0.10.0]
 
 - Released @ 7/2026 (UTC)

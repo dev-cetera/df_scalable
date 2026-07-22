@@ -19,7 +19,7 @@ funding:
   - https://www.patreon.com/c/robelator
   - https://github.com/sponsors/robelator
 description: A package that provides a convenient method to scale your app UI up or down.
-version: 0.10.0
+version: 0.10.1
 topics:
   - accessibility
   - app-scale
