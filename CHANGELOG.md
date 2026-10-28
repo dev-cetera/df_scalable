@@ -1,5 +1,10 @@
 # Changelog
 
+## [0.11.2]
+
+- Merge branch 'main' into prod
+
+
 ## [0.11.1]
 
 - docs: remove Discord, point contributors to issues and email
