@@ -51,14 +51,7 @@ jobs:
         run: flutter analyze
 
       - name: Run tests
-        # Skip cleanly when the package ships no tests — an empty `test/`
-        # would otherwise make `flutter test` exit non-zero and block release.
-        run: |
-          if [ -d test ] && ls test/*_test.dart >/dev/null 2>&1; then
-            flutter test
-          else
-            echo "No tests found — skipping."
-          fi
+        run: flutter test
 
       - name: Verify pubspec version matches tag
         run: |
